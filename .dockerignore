@@ -1,0 +1,26 @@
+# 虚拟环境（巨大，绝不能打进镜像）
+.venv/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# Git
+.git/
+.gitignore
+
+# 密钥（通过 volume 挂载，不打进镜像）
+key.env
+.env
+
+# 中文命名目录（会导致 Docker 构建报错）
+练习题/
+
+# 数据目录（通过 volume 挂载，不打进镜像）
+knowledge_docs/
+uploads/
+chroma_db/
+app/chroma_db/
+
+# 数据库文件
+*.sqlite3

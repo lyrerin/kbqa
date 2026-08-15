@@ -1,0 +1,36 @@
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 密钥 —— 绝不能提交到 GitHub！
+key.env
+.env
+.env.bak
+*.env
+!.env.example
+
+# 数据目录（本地数据，不需要上传）
+knowledge_docs/
+uploads/
+chroma_db/
+app/chroma_db/
+
+# 数据库文件
+*.sqlite3
+*.db
+
+# 旧目录（重复的虚拟环境目录）
+enterprise-kb-qa/
+
+# IDE / 系统文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
